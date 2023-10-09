@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Portfolio de Tim Burton</title>
+    <link rel="stylesheet" href="Contact.css">
+</head>
+    <body>
+        <!-- Barre de navigation -->
+        <nav>
+            <ul>
+                <li><a title="Nouvelle fenêtre : Lien vers Accueuil" href="Accueil.html">Accueil</a></li>
+                <li><a title="Nouvelle fenêtre : Lien vers Portfolio" href="Portfolio.html">Portfolio</a></li>
+                <li><a title="Nouvelle fenêtre : Lien vers Contact" href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Header -->
+        <header>
+            <h1>Portfolio de Tim Burton</h1>
+        </header>
+
+        
+        <main>
+            <!-- Section Contact -->
+            <section id="contact">
+                <h2 id="question">Une question ?</h2>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="apikey" value="cf2887ee-96ac-4ee2-a860-457b40686e48">
+                    
+                    <label for="nom"> Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                    <br>
+                    
+                    <label for="email"> E-mail :</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    
+                    <label for="telephone">Téléphone :</label>
+                    <input type="number" id="telephone" name="telephone" required>
+                    <br>
+                    
+                    <label for="message"> Message :</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <br>
+                    
+                    <label>
+                        <input type="checkbox" name="confirmation" value="accepte" required>
+                        J'accepte d'être recontacté
+                    </label>
+                    <br>
+                    
+                    <button type="submit"> Envoyer </button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2023 Tim Burton - Portfolio réalisé par Cléo</p>
+        </footer>
+    </body>
+</html>
