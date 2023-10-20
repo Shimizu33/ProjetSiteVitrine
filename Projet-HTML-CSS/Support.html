@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link rel="stylesheet" href="style/Support.css">
+</head>
+    <body>
+        <!----------- HAUT DE PAGE ---------->
+        <header>
+            <nav>
+                <div id="liens-navbar">
+                    <ul>
+                        <li>
+                            <a href="Acceuil.html"><img id=logo src="image/Logo-blanc.png" alt="Image Logo : Direction vers page d'acceuil"></a>
+                        </li>
+                        <li><a href="Acceuil.html">Accueil</a></li>
+                        <div class="menu-deroulant">
+                            <button class="deroulant-btn">Catégories</button>
+                            <div class="menu-contenu">
+                                <a href="Categorie-Chien.html">Chien</a>
+                                <a href="Categorie-Chat.html">Chat</a>
+                                <a href="">Rongeur & Co</a>
+                                <a href="">Oiseau</a>
+                            </div>
+                        </div>
+                        <li><a href="Support.html">Support</a></li>
+                        <div class="recherche">
+                            <form id=form-recherche action="#">
+                                <input type="text" placeholder="Recherchez ici" name="recherche" id="barre-recherche">
+                                <button type="submit"><img src="image/loupe-recherche.png"></button>
+                            </form>
+                        </div>                                               
+                        <li id="panier">
+                            <img id= panier-img src="image/image-panier.png" alt="Image du panier">
+                        </li>  
+                    </ul>
+                </div>
+            </nav>
+            <div class="marque">
+                <h1>Support</h1>
+            </div>
+            <div class="promotion-message">
+                <p>Obtenez une réduction de 10% sur votre première commande ! Utilisez le code promo : PREMIER10</p>
+            </div>
+        </header>
+        <!----------- FORMULAIRE DE CONTACT ---------->
+        <main>
+            <section id="contact">
+                <h2>Questions ou demandes particulières ?</h2>
+            <p>Nous sommes là pour vous aider. Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input class=input-contact type="hidden" name="apikey" value="cf2887ee-96ac-4ee2-a860-457b40686e48">
+                    
+                    <label for="nom">*Nom :</label>
+                    <input class=input-contact type="text" id="nom" name="nom" required>
+                    <br>
+                    
+                    <label for="email">*E-mail :</label>
+                    <input class=input-contact type="email" id="email" name="email" required>
+                    <br>
+                    
+                    <label for="telephone">Téléphone :</label>
+                    <input class=input-contact type="number" id="telephone" name="telephone" required>
+                    <br>
+                    
+                    <label for="message">*Message :</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <br>
+                    
+                    <label>
+                        <input type="checkbox" name="confirmation" value="accepte" required>
+                        J'accepte d'être recontacté
+                    </label>
+                    <br>
+                    
+                    <button id=button-contact type="submit"> Envoyer </button>
+                </form>
+                <div id="message"> 
+                    <p>En soumettant ce formulaire, je reconnais avoir lu et accepté la politique de confidentialité</p>
+                    <p>Vos données renseignées ne seront utilisées que pour vous contacter dans le cadre de la demande que vous nous adressez.</p>
+                </div>
+            </section>
+            <!-- Geolocalisation -->
+            <div id="map">
+                <div>
+                    <h2>Curieux de savoir où nous opérons ?</h2>
+                    <p>Notre siège social est localisé au 10 Elsa Triolet à Orchies.</p>
+                </div>
+                <div id="media">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12077.504603179397!2d3.2477724589195556!3d50.478667988241966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2db4883ace67b%3A0x74503e9d5d1bedf7!2sRue%20Elsa%20Triolet%2C%2059310%20Orchies!5e0!3m2!1sfr!2sfr!4v1697308323055!5m2!1sfr!2sfr" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </main>
+        <!----------- BAS DE PAGE ---------->
+        <footer>
+            <div>
+                <h4>LIVRAISON OFFERTE</h4>
+                <p> Nous offrons la livraison en France et en Belgique pour tout achat supérieur à 60€. </p>
+            </div>
+            <div>
+                <h4>CONTACT</h4>
+                <p>Un problème, une suggestion ? Contactez nous <a href="Support.html">en cliquant ici</a>, nous te répondrons au plus vite !</p>
+            </div>
+            <div>
+                <h4>PAIEMENT SÉCURISÉ</h4>
+                <p>Visa - Mastercard - Maestro - Amex - Paypal - Apple Pay - Shop Pay - Google Pay - Bancontact</p>
+            </div>
+            </p><p>&copy; 2023 CGV - Mentions légales</p>
+            <img id=chien-tete src="image/chien-tete.png">
+        </footer>
+    </body>
+</html>

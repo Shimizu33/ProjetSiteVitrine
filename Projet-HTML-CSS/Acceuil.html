@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil</title>
+    <link rel="stylesheet" href="style/Acceuil.css">
+</head>
+    <body>
+        <!-------- HAUT DE PAGE --------->
+        <header>
+            <nav>
+                <div id="liens-navbar">
+                    <ul>
+                        <li>
+                            <a href="Acceuil.html"><img id=logo src="image/Logo-blanc.png" alt="Image Logo : Direction vers page d'acceuil"></a>
+                        </li>
+                        <li><a href="Acceuil.html">Accueil</a></li>
+                        <div class="menu-deroulant">
+                            <button class="deroulant-btn">Catégories</button>
+                            <div class="menu-contenu">
+                                <a href="Categorie-Chien.html">Chien</a>
+                                <a href="Categorie-Chat.html">Chat</a>
+                                <a href="Categorie-Rongeur.html">Rongeur & Co</a>
+                                <a href="Categorie-Oiseau.html">Oiseau</a>
+                            </div>
+                        </div>
+                        <li><a href="Support.html">Support</a></li>
+                        <li>
+                            <div class="recherche">
+                                <form action="#">
+                                    <input type="text"
+                                        placeholder="Recherchez ici"
+                                        name="recherche">
+                                    <img src="image/loupe-recherche.png">
+                                </form>
+                            </div>
+                        </li>
+                        <li id="panier">
+                            <img id= panier-img src="image/image-panier.png" alt="Image du panier">
+                        </li>    
+                    </ul>
+                </div>
+            </nav>
+            <div class="marque">
+                <img id=nom src="image/blanche.png">
+                <img src="image/header-chiens-perroquet.png" alt="Image de trois chiens et une perruche ondulée">
+            </div>
+            <div class="promotion-message">
+                <p>Obtenez une réduction de 10% sur votre première commande ! Utilisez le code promo : PREMIER10</p>
+            </div>
+        </header>
+        <main>
+            <h2 class="titres">Nos Nouveautés</h2>
+            <!-------- Ligne 1 -------->
+            <div class="ligne-une">
+                <article>
+                    <div class="article-image">
+                        <div class="haut">
+                            <span class="stock">Nouveautés</span>
+                        </div>
+                    <a href="produits-chien/Produit-CollierVelours-Chien.html"><img class=produit src="image/collier-chien-gris.jpg" alt="Image collier en velours pour chien"></a>
+                    </div>
+                    <h2> Collier en velours</h2>
+                    <h3>Chien</h3>
+                    <div class="prix">
+                        <span class="prix-réduit">3.60€</span>
+                    </div>
+                    <div class="avis">
+                        <span> 
+                            <img class="etoile" src="image/5etoiles.png" alt="Image de 5 étoiles pour définir les avis"> 
+                        </span>
+                        <span class="nb-avis">15 avis</span>
+                    </div>
+                    <div class="boutton"> 
+                        <button>🧺 Ajouter au panier</button>
+                    </div>
+                </article>
+                <article>
+                    <div class="article-image">
+                        <div class="haut">
+                            <span class="stock">Nouveautés</span>
+                            <span class="reduction">-20%</span>
+                        </div>
+                        <a href="Acceuil.html"><img class="produit" src="image/laisse-chien-vert.webp" alt="Image d'une laisse pour chien : lien qui dirige vers la page de ce produit"></a>
+                    </div>
+                    <h2>Laisse réglable</h2>
+                    <h3>Chien</h3>
+                    <div class="prix">
+                        <span class="prix-réduit">8€</span>
+                        <span class="prix-normal">10€</span>
+                    </div>
+                    <div class="avis">
+                        <span> 
+                            <img class="etoile" src="image/5etoiles.png" alt="Image de 5 étoiles pour définir les avis"> 
+                        </span>
+                        <span class="nb-avis">36 avis</span>
+                    </div>
+                    <div class="boutton"> 
+                        <button>🧺 Ajouter au panier</button>
+                    </div>
+                </article>
+                <article>
+                    <div class="article-image">
+                        <div class="haut">
+                            <span class="stock">Nouveautés</span>
+                        </div>
+                        <a href="Acceuil.html"><img class="produit" src="image/jouethalloweenchat.jpg" alt="Image d'un jouet Halloween pour chat : lien qui dirige vers la page de ce produit"></a>
+                    </div>
+                    <h2> Jouet Halloween</h2>
+                    <h3>Chat</h3>
+                    <div class="prix">
+                        <span class="prix-réduit">2.69€</span>
+                    </div>
+                    <div class="avis">
+                        <span> 
+                            <img class="etoile" src="image/5etoiles.png" alt="Image de 5 étoiles pour définir les avis"> 
+                        </span>
+                        <span class="nb-avis">9 avis</span>
+                    </div>
+                    <div class="boutton"> 
+                        <button>🧺 Ajouter au panier</button>
+                    </div>
+                </article>
+                <article>
+                    <div class="article-image">
+                        <div class="haut">
+                            <span class="stock">Nouveautés</span>
+                            <span class="reduction">-5%</span>
+                        </div>
+                        <a href="Acceuil.html"><img class="produit" src="image/collierchat.jpg" alt="Image d'un collier en nylon pour chat : lien qui dirige vers la page de ce produit"></a>
+                    </div>
+                    <h2> Collier en nylon</h2>
+                    <h3>Chat</h3>
+                    <div class="prix">
+                        <span class="prix-réduit">8.95€</span>
+                        <span class="prix-normal">9.40€</span>
+                    </div>
+                    <div class="avis">
+                        <span> 
+                            <img class="etoile" src="image/5etoiles.png" alt="Image de 5 étoiles pour définir les avis"> 
+                        </span>
+                        <span class="nb-avis">31 avis</span>
+                    </div>
+                    <button class="boutton">🧺 Ajouter au panier</button>
+                </article>
+                </div>
+             </div>
+             <!------- Ligne 2 ------>
+             <div class="ligne-deux">
+                <article>
+                    <div class="article-image">
+                        <div class="haut">
+                            <span class="stock">Nouveautés</span>
+                            <span class="reduction">-20%</span>
+                        </div>
+                        <a href="Acceuil.html"><img class="produit" src="image/escalier-rongeurs.jpg" alt="Image d'un escalier en bois pour rongeur : lien qui dirige vers la page de ce produit"></a>
+                    </div>
+                    <h2>Escalier bois</h2>
+                    <h3>Rongeur & Co</h3>
+                    <div class="prix">
+                        <span class="prix-réduit">8€</span>
+                        <span class="prix-normal">10€</span>
+                    </div>
+                    <div class="avis">
+                        <span> 
+                            <img class="etoile" src="image/5etoiles.png" alt="Image de 5 étoiles pour définir les avis"> 
+                        </span>
+                        <span class="nb-avis">36 avis</span>
+                    </div>
+                    <div class="boutton"> 
+                        <button>🧺 Ajouter au panier</button>
+                    </div>
+                </article>
+                <article>
+                    <div class="article-image">
+                        <div class="haut">
+                            <span class="stock">Nouveautés</span>
+                        </div>
+                    <a href="Acceuil.html"><img class="produit" src="image/jouet-carottes.jpg" alt="Image d'un jouet carrotte pour rongeur : lien qui dirige vers la page de ce produit"></a>
+                    </div>
+                    <h2> Jouet Carotte</h2>
+                    <h3>Rongeur & Co</h3>
+                    <div class="prix">
+                        <span class="prix-réduit">3.20€</span>
+                    </div>
+                    <div class="avis">
+                        <span> 
+                            <img class="etoile" src="image/5etoiles.png" alt="Image de 5 étoiles pour définir les avis"> 
+                        </span>
+                        <span class="nb-avis">15 avis</span>
+                    </div>
+                    <div class="boutton"> 
+                        <button>🧺 Ajouter au panier</button>
+                    </div>
+                </article>
+                <article>
+                    <div class="article-image">
+                        <div class="haut">
+                            <span class="stock">Nouveautés</span>
+                            <span class="reduction">-5%</span>
+                        </div>
+                        <a href="Acceuil.html"><img class="produit" src="image/balançoire-bois.jpg" alt="Image balançoire pour oiseau : lien qui dirige vers la page de ce produit"></a>
+                    </div>
+                    <h2> Balançoire en bois</h2>
+                    <h3>Oiseau</h3>
+                    <div class="prix">
+                        <span class="prix-réduit">8.95€</span>
+                        <span class="prix-normal">9.40€</span>
+                    </div>
+                    <div class="avis">
+                        <span> 
+                            <img class="etoile" src="image/5etoiles.png" alt="Image de 5 étoiles pour définir les avis"> 
+                        </span>
+                        <span class="nb-avis">31 avis</span>
+                    </div>
+                    <button class="boutton">🧺 Ajouter au panier</button>
+                </article>
+                <article>
+                    <div class="article-image">
+                        <div class="haut">
+                            <span class="stock">Nouveautés</span>
+                        </div>
+                        <a href="Acceuil.html"><img class="produit" src="image/nichoir-coco.jpg" alt="Nid en forme de noix de coco pour oiseau : lien qui dirige vers la page de ce produit"></a>
+                    </div>
+                    <h2>Nichoir Coco</h2>
+                    <h3>Oiseau</h3>
+                    <div class="prix">
+                        <span class="prix-réduit">2.69€</span>
+                    </div>
+                    <div class="avis">
+                        <span> 
+                            <img class="etoile" src="image/5etoiles.png" alt="Image de 5 étoiles pour définir les avis"> 
+                        </span>
+                        <span class="nb-avis">9 avis</span>
+                    </div>
+                    <div class="boutton"> 
+                        <button>🧺 Ajouter au panier</button>
+                    </div>
+                </article>
+                </div>
+             </div>
+             <!--------- Catégories -------->
+             <h2 class="titres">Nos Catégories</h2>
+            <section id="categories">
+                <div class="categorie-item">
+                    <a href="Categorie-Chien.html"><img src="image/chien-categorie.png" alt="Image de Chien : lien qui dirige vers la page de ce produit"></a>
+                    <h3>Chiens 🐾</h3>
+                </div>
+                <div class="categorie-item">
+                    <a href="Categorie-Chat.html"><img src="image/chat-categorie.png" alt="Image de Chat : lien qui dirige vers la page de ce produit"></a>
+                    
+                    <h3>Chats🐾</h3>
+                </div>
+                <div class="categorie-item">
+                    <a href="Categorie-Rongeur.html"><img src="image/rongeur-categorie.png" alt="Image d'un Lapin : lien qui dirige vers la page de ce produit"></a>
+                    <h3>Rongeurs🐾</h3>
+                </div>
+                <div class="categorie-item">
+                    <a href="Categorie-Oiseau.html"><img src="image/oiseaux-categorie.png" alt="Image d'un Perroquet : lien qui dirige vers la page de ce produit"> </a>
+                    <h3>Oiseaux🐾</h3>
+                </div>
+            </section>
+            </div>
+        </main>
+        <!-------- BAS DE PAGE ---------->
+        <footer>
+            <div>
+                <h4>LIVRAISON OFFERTE</h4>
+                <p> Nous offrons la livraison en France et en Belgique pour tout achat supérieur à 60€. </p>
+            </div>
+            <div>
+                <h4>CONTACT</h4>
+                <p>Un problème, une suggestion ? Contactez nous <a href="Support.html">en cliquant ici</a>, nous te répondrons au plus vite !</p>
+            </div>
+            <div>
+                <h4>PAIEMENT SÉCURISÉ</h4>
+                <p>Visa - Mastercard - Maestro - Amex - Paypal - Apple Pay - Shop Pay - Google Pay - Bancontact</p>
+            </div>
+            </p><p>&copy; 2023 CGV - Mentions légales</p>
+        </footer>
+    </body>
+</html>
+
+
+

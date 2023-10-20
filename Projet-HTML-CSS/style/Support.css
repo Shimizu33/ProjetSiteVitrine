@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;1,700&display=swap');
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color:rgb(245, 245, 245);
+    color: rgb(25, 100, 126);
+    padding: 0;
+    margin: 0;
+}
+
+/* HAUT DE PAGE */
+
+header {
+    text-align: center;
+    padding-bottom: 0px;
+    background-color: rgb(86, 163, 166);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    position:relative;
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+}
+
+header img{
+    height: 300px;
+    justify-content: end;
+}
+
+.marque {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    padding-top:50px;
+    padding-bottom:70px;
+    margin-bottom:70px ;
+}
+
+/* barre de navigation */
+nav {
+    background-color: rgb(25, 100, 126);
+    position:fixed;
+    justify-content: start;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    text-align: center;
+}
+
+#liens-navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+}
+
+#liens-navbar a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+
+#liens-navbar a:hover {
+    border: 1px solid rgb(243, 247, 254);
+}
+
+nav li ul{
+    text-align: center;
+}
+
+/* menu déroulant */
+
+.menu-deroulant{
+    float: left;
+    overflow: hidden;
+}
+
+.menu-deroulant .deroulant-btn{
+    font-size:18px;
+    font-weight: 600;
+    border:none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    background-color: rgb(25, 100, 126);
+    margin: 0;
+}    
+
+.menu-deroulant:hover .deroulant-btn{
+    background-color: rgb(25, 100, 126);
+}
+
+.menu-contenu{
+    display: none;
+    position: absolute;
+    background-color: rgb(25, 100, 126);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.menu-contenu a{
+    float: none;
+    color: rgb(243, 247, 254);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.menu-contenu a:hover{
+    background-color: rgb(115, 130, 144);
+}
+
+.menu-deroulant:hover .menu-contenu{
+    display: block;
+}
+
+nav li ul{
+    text-align: center;
+}
+
+#logo {
+    height: 40px;
+}
+
+
+/* Barre de recherche */
+
+#form-recherche {
+    display: flex;
+    justify-content: center;
+}
+
+.recherche input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+  
+.recherche input[type="text"]::placeholder {
+    color: rgb(25, 100, 126);
+    text-align: center;
+}
+  
+.recherche img {
+    margin-top: 3px;
+    margin-left: 5px;
+    width: 28px; 
+    height: 28px;
+    cursor: pointer;
+}
+
+
+#barre-recherche {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 5px;
+}
+
+
+.recherche button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* panier */
+#panier {
+    display: flex;
+    align-items: center;
+}
+
+#panier-img {
+    height:30px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+
+/* Message promotionnel */
+.promotion-message {
+    background-color: rgb(84, 166, 124);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.promotion-message p {
+    margin: 0;
+}
+
+
+/* FORMULAIRE CONTACT */
+
+#contact {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(245, 245, 245);
+}
+
+
+#contact form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+}
+
+#contact form input,
+#contact form textarea#message {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+}
+
+/* bouton */
+#contact button#button-contact {
+    background-color: rgb(86, 163, 166);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    width: 200px;
+    height: 45px;
+    transition: 0.3s;
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#contact button#button-contact:hover {
+    background-color: rgb(25, 100, 126);
+    box-shadow: 0 0 0 5px rgb(183, 208, 217);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#contact form label, #contact form #input-contact[type="checkbox"] {
+    display: inline;
+}
+
+#contact form #input-conatct[type="checkbox"] {
+    margin: 0 5px;
+}
+
+/* Message dessous formulaire */
+
+#message{
+    text-align: center;
+    font-size: 12px;
+}
+
+/* MAP */
+
+#map{
+    margin: 50px;
+    padding: 20px;
+}
+
+h2, p{
+    text-align: center;
+}
+
+#media{
+    text-align: center;
+    padding: 20px;
+}
+
+/* BAS DE PAGE */
+
+
+footer {
+    background-color:rgb(25, 100, 126);
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+}
+
+footer p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+footer div {
+    display: inline-block;
+    width: 30%; 
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(255, 170, 0);
+}
+
+h4{
+    color: rgb(255, 255, 255);
+}
+
+#chien-tete{
+    height: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    #liens-navbar ul {
+        flex-direction: column;
+    }
+
+    #liens-navbar a {
+        padding: 10px 0;
+    }
+
+    .deroulant-content {
+        position: static;
+        display: none;
+    }
+
+    .deroulant:hover .dropdown-content {
+        display: block;
+    }
+}
+
+
+/* Styles pour les écrans plus petits (par exemple, tablettes et téléphones) */
+@media (max-width: 768px) {
+    #liens-navbar ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #liens-navbar a {
+        padding: 10px 0; 
+        display: block; 
+        text-align: center; 
+    }
+}
+
+
+
+/* Ajustements pour les écrans de taille moyenne (par exemple, tablettes) */
+@media (max-width: 1024px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Ajustements pour les écrans plus petits (par exemple, téléphones) */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}

@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;1,700&display=swap');
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color:rgb(245, 245, 245);
+    color: rgb(25, 100, 126);
+    padding: 0;
+    margin: 0;
+}
+
+/* HAUT DE PAGE */
+/* Barre navigation */
+nav {
+    background-color: rgb(25, 100, 126);
+    position:fixed;
+    justify-content: start;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    text-align: center;
+}
+
+#liens-navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+}
+
+#liens-navbar a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+#liens-navbar a:hover {
+    border: 1px solid rgb(243, 247, 254);
+}
+
+/* Menu déroulant */
+.menu-deroulant{
+    float: left;
+    overflow: hidden;
+}
+
+.menu-deroulant .deroulant-btn{
+    font-size:18px;
+    border:none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    background-color: rgb(25, 100, 126);
+    margin: 0;
+}    
+
+.menu-deroulant:hover .deroulant-btn{
+    background-color: rgb(25, 100, 126);
+}
+
+.menu-contenu{
+    display: none;
+    position: absolute;
+    background-color: rgb(25, 100, 126);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.menu-contenu a{
+    float: none;
+    color: rgb(243, 247, 254);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.menu-contenu a:hover{
+    background-color: rgb(115, 130, 144);
+}
+
+.menu-deroulant:hover .menu-contenu{
+    display: block;
+}
+
+nav li ul{
+    text-align: center;
+}
+
+#logo {
+    height: 40px;
+}
+
+/* panier */
+#panier {
+    display: flex;
+    align-items: center;
+}
+
+#panier-img {
+    height:30px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+/* Barre de recherche */
+form{
+    display: flex;
+    justify-content: center;
+}
+  .recherche input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+.recherche input[type="text"]::placeholder {
+    color: rgb(25, 100, 126);
+    text-align: center;
+}
+  
+.recherche img {
+    margin-top: 3px;
+    margin-left: 5px;
+    width: 28px; 
+    height: 28px;
+    cursor: pointer;
+}
+
+/* PAGE */                            
+main{
+    margin:0;
+    padding: 90px;
+    text-align: center;
+}
+    
+/* Produit de la page*/
+.page-produit {
+    margin: 90px;
+    padding: 20px;
+}
+
+.produit{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 0px 50px 0px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+}
+
+.details-produit {
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.images-produit {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.images-produit .image-principale {
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgb(25, 100, 126);
+    border-radius: 20px;
+    position: relative;
+}
+
+.petites-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.petites-images img {
+    width: 150px;;
+    height: 150px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(25, 100, 126);
+    border-radius: 20px;
+}
+
+/* Haut description */
+.prix-produit {
+    text-align: center;
+    margin-top: 25px;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(25, 100, 126);
+}
+
+.prix-normal-produit {
+    text-decoration: line-through;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(25, 100, 126);
+}
+
+.etoile {
+    height: 20px;
+    width: 100px;
+}
+
+.avis {
+    text-align: center;
+}
+
+.nb-avis {
+    margin-bottom: 10px;
+}
+
+.haut {
+    position: relative;
+    z-index: 1;
+    margin-top: 6px;
+    color: rgb(243, 247, 254);
+}
+
+.stock, .reduction, .reserve {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.stock {
+    border: 1px solid rgb(91, 137, 73);
+    background-color: rgb(91, 137, 73);
+    margin-left: 5px;
+}
+
+.reduction {
+    border: 1px solid rgb(164, 52, 52);
+    background-color: rgb(164, 52, 52);
+}
+
+.reserve {
+    border: 1px solid rgb(19, 3, 68);
+    background-color: rgb(19, 3, 68);
+}
+
+h1 {
+    font-size: 28px;
+    color:rgb(11, 62, 79) ;
+}
+
+p {
+    margin: 0px;
+}
+
+#caracteristiques-produit.ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    text-align: start;
+}
+
+.boite-achat {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#livraison{
+    padding-bottom: 20px;
+}
+
+/* Bouton ajouter */
+
+#panier {
+    position: relative;
+}
+
+#panier #ajouter {
+    background-color: rgb(86, 163, 166);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    width: 400px;
+    height: 45px;
+    transition: .3s;
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
+    text-align: center;
+    margin: 15px;
+}
+
+#panier #ajouter:hover {
+    background-color: rgb(25, 100, 126);
+    box-shadow: 0 0 0 5px rgb(183, 208, 217);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Description */
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Couleurs */
+
+ul.couleurs {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+}
+
+.couleur-une {
+    width: 13px;
+    height: 13px;
+    margin: auto 0px;
+    background-color: rgb(194, 194, 194);
+    border-radius: 50px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.3s all ease;
+}
+  
+.couleur-deux {
+    width: 13px;
+    height: 13px;
+    margin: auto 0px;
+    background-color: rgb(62, 105, 58);
+    border-radius: 50px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.3s all ease;
+}
+  
+.couleur-trois {
+    width: 13px;
+    height: 13px;
+    margin: auto 0px;
+    background-color: rgb(229, 132, 186);
+    border-radius: 50px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.3s all ease;
+}
+  
+.couleur-une:hover, .couleur-deux:hover, .couleur-trois:hover {
+    border: 2px solid rgb(0, 0, 0);
+    width: 13px;
+    height: 13px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* RECOMMANDATION */
+
+.ligne-pr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#titre-pr{
+    text-decoration: underline;
+}
+.article-pr {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(221, 221, 221);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.article-pr:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.img-pr {
+    position: relative;
+    z-index: 0;
+    height: 300px;
+    border-radius: 25px;
+}
+
+
+.haut-pr {
+    position: absolute;
+    z-index: 1;
+    margin-top: 6px;
+    color: rgb(243, 247, 254);
+}
+
+.stock-pr, .reduction-pr {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.stock-pr {
+    border: 1px solid rgb(91, 137, 73);
+    background-color: rgb(91, 137, 73);
+    margin-left: 5px;
+}
+
+.reduction-pr {
+    border: 1px solid rgb(164, 52, 52);
+    background-color: rgb(164, 52, 52);
+}
+
+.produit-recommandes {
+    position: relative;
+    z-index: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 25px;
+}
+
+/* Dessous image */
+.prix-pr {
+    text-align: center;
+    margin-top: 25px;
+    padding: 5px;
+    font-weight: 600;
+    color: rgb(25, 100, 126);
+}
+
+.prix-normal-pr {
+    text-decoration: line-through;
+    font-weight: 600;
+    color: rgb(25, 100, 126);
+}
+
+.etoile-pr {
+    height: 20px;
+    width: 100px;
+}
+
+.avis-pr {
+    text-align: center;
+}
+
+.nb-avis-pr {
+    margin-bottom: 10px;
+}
+
+/* Bouton ajouter */
+.boutton{
+    position: relative;
+}
+
+.boutton-pr {
+    background-color: rgb(86, 163, 166);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    width: 200px;
+    height: 45px;
+    transition: .3s;
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
+    text-align: center;
+    margin: 15px;
+}
+
+.boutton_pr:hover {
+    background-color: rgb(25, 100, 126);
+    box-shadow: 0 0 0 5px rgb(183, 208, 217);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+/* BAS DE PAGE */
+
+footer {
+    background-color:rgb(25, 100, 126);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+    padding: 10px;
+}
+
+footer div {
+    display: inline-block;
+    width: 30%; 
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: rgb(255, 170, 0);
+}
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    #liens-navbar ul {
+        flex-direction: column;
+    }
+
+    #liens-navbar a {
+        padding: 10px 0;
+    }
+
+    .deroulant-content {
+        position: static;
+        display: none;
+    }
+
+    .deroulant:hover .dropdown-content {
+        display: block;
+    }
+}
+
+
+/* Styles pour les écrans plus petits (par exemple, tablettes et téléphones) */
+@media (max-width: 768px) {
+    #liens-navbar ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #liens-navbar a {
+        padding: 10px 0; 
+        display: block; 
+        text-align: center; 
+    }
+}
+
+
+/*Pour tablettes) */
+@media (max-width: 1024px) {
+    .article-pr {
+        width: 45%; 
+    }
+}
+
+/* ¨Pour téléphone */
+@media (max-width: 768px) {
+    .article-pr {
+        width: 100%; 
+    }
+}
+
