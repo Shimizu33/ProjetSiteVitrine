@@ -268,14 +268,14 @@ nav li ul{
     display: inline;
 }
 
-#contact form #input-conatct[type="checkbox"] {
-    margin: 0 5px;
+label input#validation[type="checkbox"] {
+    width: auto;
 }
 
 /* Message dessous formulaire */
 
 #message{
-    text-align: center;
+    text-align: start;
     font-size: 12px;
 }
 
