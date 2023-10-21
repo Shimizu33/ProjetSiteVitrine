@@ -302,7 +302,8 @@ button {
 button:hover {
     background-color: rgb(25, 100, 126);
     box-shadow: 0 0 0 5px rgb(183, 208, 217);
-    color: #fff;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 /* Lignes Articles */
@@ -382,23 +383,14 @@ footer a {
 @media (max-width: 768px) {
     
     /* Haut de page */
-    nav{
-    }
-
     #liens-navbar ul {
         flex-direction: column;
-        padding: 0;
+        padding: 10px;
     }
 
     #liens-navbar a {
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 18px;
-        color: rgb(255, 255, 255);
         padding: 10px 20px;
-        transition: color 0.3s ease;
     }
-    
 
     #logo {
         height: 30px;
@@ -481,7 +473,9 @@ footer a {
 
     footer div {
         display: block;
-        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
         padding: 15px;
     }
 

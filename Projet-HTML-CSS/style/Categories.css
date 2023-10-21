@@ -219,9 +219,7 @@ article:hover {
     color: #f3f7fe;
 }
 
-.stock,
-.reduction,
-.edition {
+.stock, .reduction,.edition {
     border-radius: 10px;
     padding: 5px;
 }
@@ -313,7 +311,8 @@ button {
 button:hover {
     background-color: rgb(25, 100, 126);
     box-shadow: 0 0 0 5px rgb(183, 208, 217);
-    color: #fff;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 

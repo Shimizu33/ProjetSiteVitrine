@@ -97,10 +97,6 @@ nav li ul{
 }
 
 /* panier */
-#panier {
-    display: flex;
-    align-items: center;
-}
 
 #panier-img {
     height:30px;
@@ -194,7 +190,7 @@ main{
 }
 
 /* Haut description */
-.prix-produit {
+.prix-réduit-produit {
     text-align: center;
     margin-top: 25px;
     padding: 5px;
@@ -230,7 +226,7 @@ main{
     color: rgb(243, 247, 254);
 }
 
-.stock, .reduction, .reserve {
+.stock, .reduction, .reserve, .edition{
     border-radius: 10px;
     padding: 5px;
 }
@@ -249,6 +245,11 @@ main{
 .reserve {
     border: 1px solid rgb(19, 3, 68);
     background-color: rgb(19, 3, 68);
+}
+
+.edition {
+    border: 1px solid rgb(112, 52, 164);
+    background-color: rgb(112, 52, 164);
 }
 
 h1 {
@@ -308,18 +309,18 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 10px;
 }
 
 /* Couleurs */
-
 ul.couleurs {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    padding: 10px;
+    padding: 5px;
 }
 
-.couleur-une {
+.couleur-gris {
     width: 13px;
     height: 13px;
     margin: auto 0px;
@@ -329,7 +330,7 @@ ul.couleurs {
     transition: 0.3s all ease;
 }
   
-.couleur-deux {
+.couleur-vert {
     width: 13px;
     height: 13px;
     margin: auto 0px;
@@ -339,7 +340,7 @@ ul.couleurs {
     transition: 0.3s all ease;
 }
   
-.couleur-trois {
+.couleur-rose {
     width: 13px;
     height: 13px;
     margin: auto 0px;
@@ -348,8 +349,37 @@ ul.couleurs {
     border: 2px solid rgba(0, 0, 0, 0);
     transition: 0.3s all ease;
 }
-  
-.couleur-une:hover, .couleur-deux:hover, .couleur-trois:hover {
+
+.couleur-bleu {
+    width: 13px;
+    height: 13px;
+    margin: auto 0px;
+    background-color: rgb(34, 35, 126);
+    border-radius: 50px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.3s all ease;
+}
+.couleur-orange {
+    width: 13px;
+    height: 13px;
+    margin: auto 0px;
+    background-color: rgb(182, 91, 30);
+    border-radius: 50px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.3s all ease;
+}
+
+.couleur-noir {
+    width: 13px;
+    height: 13px;
+    margin: auto 0px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.3s all ease;
+}
+
+.couleur-gris:hover, .couleur-vert:hover, .couleur-rose:hover, .couleur-orange:hover, .couleur-bleu:hover, .couleur-noir:hover{
     border: 2px solid rgb(0, 0, 0);
     width: 13px;
     height: 13px;
@@ -472,7 +502,7 @@ ul.couleurs {
     margin: 15px;
 }
 
-.boutton_pr:hover {
+.boutton-pr:hover {
     background-color: rgb(25, 100, 126);
     box-shadow: 0 0 0 5px rgb(183, 208, 217);
     color: rgb(255, 255, 255);
