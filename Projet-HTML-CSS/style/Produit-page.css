@@ -310,6 +310,7 @@ p {
     flex-direction: column;
     justify-content: center;
     padding-top: 10px;
+    font-size: 18px;
 }
 
 /* Couleurs */
@@ -350,6 +351,16 @@ ul.couleurs {
     transition: 0.3s all ease;
 }
 
+.couleur-violet {
+    width: 13px;
+    height: 13px;
+    margin: auto 0px;
+    background-color: rgb(151, 30, 184);
+    border-radius: 50px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.3s all ease;
+}
+
 .couleur-bleu {
     width: 13px;
     height: 13px;
@@ -379,7 +390,17 @@ ul.couleurs {
     transition: 0.3s all ease;
 }
 
-.couleur-gris:hover, .couleur-vert:hover, .couleur-rose:hover, .couleur-orange:hover, .couleur-bleu:hover, .couleur-noir:hover{
+.couleur-rouge {
+    width: 13px;
+    height: 13px;
+    margin: auto 0px;
+    background-color: rgb(172, 45, 45);
+    border-radius: 50px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.3s all ease;
+}
+
+.couleur-gris:hover, .couleur-vert:hover, .couleur-rose:hover, .couleur-violet:hover, .couleur-orange:hover, .couleur-bleu:hover, .couleur-noir:hover, .couleur-rouge:hover{
     border: 2px solid rgb(0, 0, 0);
     width: 13px;
     height: 13px;
@@ -530,7 +551,7 @@ footer div {
     display: inline-block;
     width: 30%; 
     margin: 0px;
-    padding: 0px;
+    padding: 8px;
     text-align: center;
 }
 

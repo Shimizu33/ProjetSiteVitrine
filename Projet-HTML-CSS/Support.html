@@ -16,15 +16,17 @@
                             <a href="Acceuil.html"><img id=logo src="image/Logo-blanc.png" alt="Image Logo : Direction vers page d'acceuil"></a>
                         </li>
                         <li><a href="Acceuil.html">Accueil</a></li>
-                        <div class="menu-deroulant">
-                            <button class="deroulant-btn">Catégories</button>
-                            <div class="menu-contenu">
-                                <a href="Categorie-Chien.html">Chien</a>
-                                <a href="Categorie-Chat.html">Chat</a>
-                                <a href="">Rongeur & Co</a>
-                                <a href="">Oiseau</a>
+                        <li>
+                            <div class="menu-deroulant">
+                                <button class="deroulant-btn">Catégories</button>
+                                <div class="menu-contenu">
+                                    <a href="Categorie-Chien.html">Chien</a>
+                                    <a href="Categorie-Chat.html">Chat</a>
+                                    <a href="Categorie-Rongeur.html">Rongeur & Co</a>
+                                    <a href="Categorie-Oiseau.html">Oiseau</a>
+                                </div>
                             </div>
-                        </div>
+                        </li>
                         <li><a href="Support.html">Support</a></li>
                         <div class="recherche">
                             <form id=form-recherche action="#">
@@ -49,15 +51,16 @@
         <main>
             <section id="contact">
                 <h2>Questions ou demandes particulières ?</h2>
-            <p>Nous sommes là pour vous aider. Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+                <p>Nous sommes là pour vous aider.</p>
+                <p>Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
                 <form action="https://api.web3forms.com/submit" method="POST">
                     <input class=input-contact type="hidden" name="apikey" value="cf2887ee-96ac-4ee2-a860-457b40686e48">
                     
-                    <label for="nom">*Nom :</label>
+                    <label for="nom">Nom :</label>
                     <input class=input-contact type="text" id="nom" name="nom" required>
                     <br>
 
-                    <label for="email">*E-mail :</label>
+                    <label for="email">E-mail :</label>
                     <input class=input-contact type="email" id="email" name="email" required>
                     <br>
                     
@@ -65,7 +68,7 @@
                     <input class=input-contact type="number" id="telephone" name="telephone" required>
                     <br>
                     
-                    <label for="message">*Message :</label>
+                    <label for="message">Message :</label>
                     <textarea id="message" name="message" required></textarea>
                     <br>
                     
@@ -114,7 +117,7 @@
                 <h4>PAIEMENT SÉCURISÉ</h4>
                 <p>Visa - Mastercard - Maestro - Amex - Paypal - Apple Pay - Shop Pay - Google Pay - Bancontact</p>
             </div>
-            </p><p>&copy; 2023 CGV - Mentions légales</p>
+            <p>&copy; 2023 CGV - Mentions légales</p>
             <img id=chien-tete src="image/chien-tete.png">
         </footer>
     </body>
