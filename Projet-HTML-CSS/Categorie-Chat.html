@@ -12,11 +12,15 @@
             <nav>
                 <div id="liens-navbar">
                     <ul>
-                        <li>
+                        <input type="checkbox" id="check">
+                        <li class="li-logo">
                             <a href="Acceuil.html"><img id=logo src="image/Logo-blanc.png" alt="Image Logo : Direction vers page d'acceuil"></a>
+                            <label for="check" class="icon" >
+                                <img src="image/menu-hamburger.png" id="menu-icon">
+                            </label>
                         </li>
-                        <li><a href="Acceuil.html">Accueil</a></li>
-                        <li>
+                        <li class="li-liens"><a href="Acceuil.html">Accueil</a></li>
+                        <li class="li-liens">
                             <div class="menu-deroulant">
                                 <button class="deroulant-btn">Catégories</button>
                                 <div class="menu-contenu">
@@ -27,8 +31,8 @@
                                 </div>
                             </div>
                         </li>
-                        <li><a href="Support.html">Support</a></li>
-                        <li>
+                        <li class="li-liens"><a href="Support.html">Support</a></li>
+                        <li class="li-liens">
                             <div class="recherche">
                                 <form action="#">
                                     <input type="text"
@@ -38,9 +42,9 @@
                                 </form>
                             </div>
                         </li>
-                        <li id="panier">
+                        <li class="li-liens">
                             <img id= panier-img src="image/image-panier.png" alt="Image du panier">
-                        </li>  
+                        </li>    
                     </ul>
                 </div>
             </nav>

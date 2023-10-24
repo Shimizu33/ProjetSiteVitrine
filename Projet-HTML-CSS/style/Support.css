@@ -80,8 +80,32 @@ nav li ul{
     text-align: center;
 }
 
-/* menu déroulant */
+.icon{
+    display: none;
+}
 
+#check{
+    display: none;
+}
+
+#menu-icon{
+    width: 35px;
+    height: 30px;
+    padding: 10px 20px;
+}
+
+#logo {
+    height: 40px;
+}
+
+/* panier */
+#panier-img {
+    height: 30px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+/* menu déroulant */
 .menu-deroulant{
     float: left;
     overflow: hidden;
@@ -126,15 +150,6 @@ nav li ul{
 .menu-deroulant:hover .menu-contenu{
     display: block;
 }
-
-nav li ul{
-    text-align: center;
-}
-
-#logo {
-    height: 40px;
-}
-
 
 /* Barre de recherche */
 
@@ -235,7 +250,7 @@ nav li ul{
 
 #contact form input,
 #contact form textarea#message {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid rgb(204, 204, 204);
@@ -273,17 +288,19 @@ label input#validation[type="checkbox"] {
 }
 
 /* Message dessous formulaire */
-
 #message{
     text-align: start;
     font-size: 12px;
 }
 
 /* MAP */
-
 #map{
     margin: 50px;
-    padding: 20px;
+}
+
+#iframe-map{
+    width: 600px;
+    height: 450px;
 }
 
 h2, p{
@@ -292,12 +309,9 @@ h2, p{
 
 #media{
     text-align: center;
-    padding: 20px;
 }
 
-/* BAS DE PAGE */
-
-
+/* Bas de page */
 footer {
     background-color:rgb(25, 100, 126);
     text-align: center;
@@ -333,61 +347,99 @@ h4{
     padding: 0;
 }
 
-
-
-
-
-
-
-/* RESPONSIVE */
-@media screen and (max-width: 768px) {
-    #liens-navbar ul {
-        flex-direction: column;
-    }
-
-    #liens-navbar a {
-        padding: 10px 0;
-    }
-
-    .deroulant-content {
-        position: static;
-        display: none;
-    }
-
-    .deroulant:hover .dropdown-content {
-        display: block;
-    }
-}
-
-
-/* Styles pour les écrans plus petits (par exemple, tablettes et téléphones) */
+/* Pour tablettes et téléphones */
 @media (max-width: 768px) {
+    
+    /* Haut de page */
+
     #liens-navbar ul {
         flex-direction: column;
         padding: 10px;
     }
 
     #liens-navbar a {
-        padding: 10px 0; 
-        display: block; 
-        text-align: center; 
+        padding: 10px 20px;
     }
-}
 
+    .li-liens{
+        display:none;
 
-
-/* Ajustements pour les écrans de taille moyenne (par exemple, tablettes) */
-@media (max-width: 1024px) {
-    footer {
-        flex-direction: column;
-        text-align: center;
     }
-}
 
-/* Ajustements pour les écrans plus petits (par exemple, téléphones) */
-@media (max-width: 768px) {
-    footer {
+    .li-logo{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .icon{
+        display: flex;
+    }
+
+    #check:checked~.li-liens{
+        display:flex
+    }
+
+    .menu-deroulant .deroulant-btn {
+        padding: 10px 10px;
+        
+    }
+
+    #liens-navbar a {
+        padding: 20px 10px;
+    }
+    /* Barre de recherche */
+    .recherche input[type="text"] {
+        width: 120px;
+    }
+
+    .recherche{
+        padding: 10px 10px;
+    }
+
+    .recherche img {
+        margin-top: 3px;
+        margin-left: 5px;
+        width: 28px;
+        height: 28px;
+    }
+
+    /* Header */
+    header {
+        padding-top: 50px;
+    }
+
+    /* Message promotionnel */
+    .promotion-message {
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+        /* MAP */
+    #iframe-map{
+        width: 300px;
+        height: 200px;
+    }
+
+    /* Bas de page */
+    footer{
+       width: 100%;
+    }
+
+    footer div {
+        display: block;
         flex-direction: column;
-        text-align: center;
+        justify-content: center;
+        width: 90%;
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 14px;
     }
 }

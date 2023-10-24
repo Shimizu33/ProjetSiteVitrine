@@ -12,11 +12,15 @@
             <nav>
                 <div id="liens-navbar">
                     <ul>
-                        <li>
+                        <input type="checkbox" id="check">
+                        <li class="li-logo">
                             <a href="Acceuil.html"><img id=logo src="image/Logo-blanc.png" alt="Image Logo : Direction vers page d'acceuil"></a>
+                            <label for="check" class="icon" >
+                                <img src="image/menu-hamburger.png" id="menu-icon">
+                            </label>
                         </li>
-                        <li><a href="Acceuil.html">Accueil</a></li>
-                        <li>
+                        <li class="li-liens"><a href="Acceuil.html">Accueil</a></li>
+                        <li class="li-liens">
                             <div class="menu-deroulant">
                                 <button class="deroulant-btn">Catégories</button>
                                 <div class="menu-contenu">
@@ -27,16 +31,18 @@
                                 </div>
                             </div>
                         </li>
-                        <li><a href="Support.html">Support</a></li>
-                        <div class="recherche">
-                            <form id=form-recherche action="#">
-                                <input type="text" placeholder="Recherchez ici" name="recherche" id="barre-recherche">
-                                <button type="submit"><img src="image/loupe-recherche.png"></button>
-                            </form>
-                        </div>                                               
-                        <li id="panier">
+                        <li class="li-liens"><a href="Support.html">Support</a></li>
+                        <li class="li-liens">
+                            <div class="recherche">
+                                <form id=form-recherche action="#">
+                                    <input type="text" placeholder="Recherchez ici" name="recherche" id="barre-recherche">
+                                    <button type="submit"><img src="image/loupe-recherche.png"></button>
+                                </form>
+                            </div> 
+                        </li>
+                        <li class="li-liens">
                             <img id= panier-img src="image/image-panier.png" alt="Image du panier">
-                        </li>  
+                        </li>    
                     </ul>
                 </div>
             </nav>
@@ -92,10 +98,7 @@
                     <p>Notre siège social est localisé au 10 Elsa Triolet à Orchies.</p>
                 </div>
                 <div id="media">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12077.504603179397!2d3.2477724589195556!3d50.478667988241966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2db4883ace67b%3A0x74503e9d5d1bedf7!2sRue%20Elsa%20Triolet%2C%2059310%20Orchies!5e0!3m2!1sfr!2sfr!4v1697308323055!5m2!1sfr!2sfr" 
-                    width="600" 
-                    height="450" 
-                    style="border:0;" 
+                    <iframe id="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12077.504603179397!2d3.2477724589195556!3d50.478667988241966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2db4883ace67b%3A0x74503e9d5d1bedf7!2sRue%20Elsa%20Triolet%2C%2059310%20Orchies!5e0!3m2!1sfr!2sfr!4v1697308323055!5m2!1sfr!2sfr" 
                     allowfullscreen="" 
                     loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade">

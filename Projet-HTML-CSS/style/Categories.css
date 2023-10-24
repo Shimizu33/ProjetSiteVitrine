@@ -33,7 +33,7 @@ header img{
     padding-top:70px;
 }
 
-/* Styles pour la barre de navigation */
+/* Barre de navigation */
 nav {
     background-color: rgb(25, 100, 126);
     position:fixed;
@@ -68,7 +68,32 @@ nav {
     border: 1px solid rgb(243, 247, 254);
 }
 
-/* Styles pour le menu déroulant */
+.icon{
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+#menu-icon{
+    width: 35px;
+    height: 30px;
+    padding: 10px 20px;
+}
+
+#logo {
+    height: 40px;
+}
+
+/* panier */
+
+#panier-img {
+    height: 30px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+/* Menu déroulant */
 
 .menu-deroulant{
     float: left;
@@ -114,7 +139,7 @@ nav {
     display: block;
 }
 
-/* ------------Barre de recherche---------- */
+/* Barre de recherche */
 form {
     display: flex;
     justify-content: center;
@@ -193,19 +218,6 @@ article {
     transition: transform 0.2s;
 }
 
-/*Pour tablettes) */
-@media (max-width: 1024px) {
-    article {
-        width: 45%; 
-    }
-}
-
-/* ¨Pour téléphone */
-@media (max-width: 768px) {
-    article {
-        width: 100%; 
-    }
-}
 
 article:hover {
     transform: scale(1.05);
@@ -315,11 +327,7 @@ button:hover {
     cursor: pointer;
 }
 
-
-
-
-/* BAS DE PAGE */
-
+/* Bas de page */
 footer {
     background-color:rgb(25, 100, 126);
     text-align: center;
@@ -348,74 +356,128 @@ footer a {
 }
 
 
-
-/* RESPONSIVE */
-@media screen and (max-width: 768px) {
-    #liens-navbar ul {
-        flex-direction: column;
-    }
-
-    #liens-navbar a {
-        padding: 10px 0;
-    }
-
-    .deroulant-content {
-        position: static;
-        display: none;
-    }
-
-    .deroulant:hover .dropdown-content {
-        display: block;
-    }
-}
-nav li ul{
-    text-align: center;
-}
-#logo {
-    height: 40px;
-}
-
-/* panier */
-#panier {
-    display: flex;
-    align-items: center;
-}
-
-#panier-img {
-    height:30px;
-    margin-top: 4px;
-    cursor: pointer;
-}
-
-/* Styles pour les écrans plus petits (par exemple, tablettes et téléphones) */
+/* Pour tablettes et téléphones */
 @media (max-width: 768px) {
+    
+    /* Haut de page */
+
     #liens-navbar ul {
         flex-direction: column;
         padding: 10px;
     }
 
     #liens-navbar a {
-        padding: 10px 0; 
-        display: block; 
-        text-align: center; 
+        padding: 10px 20px;
     }
-}
 
+    .li-liens{
+        display:none;
 
+    }
 
-/* Ajustements pour les écrans de taille moyenne (par exemple, tablettes) */
-@media (max-width: 1024px) {
-    footer {
+    .li-logo{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .icon{
+        display: flex;
+    }
+
+    #check:checked~.li-liens{
+        display:flex
+    }
+
+    .menu-deroulant .deroulant-btn {
+        padding: 10px 10px;
+        
+    }
+
+    #liens-navbar a {
+        padding: 20px 10px;
+    }
+    /* Barre de recherche */
+    .recherche input[type="text"] {
+        width: 120px;
+    }
+
+    .recherche{
+        padding: 10px 10px;
+    }
+
+    .recherche img {
+        margin-top: 3px;
+        margin-left: 5px;
+        width: 28px;
+        height: 28px;
+    }
+
+    /* Header */
+    header {
+        padding-top: 50px;
+    }
+
+    header img {
+        height: 230px;
+        display: flex;
+        background-size: cover;
+    }
+
+    img#nom {
+        height: 100px;
+    }
+
+    /* Message promotionnel */
+    .promotion-message {
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    /* Articles */
+    main {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    article {
+        margin: 10px;
+        padding: 10px;
+        width: 200px;
+    }
+
+    .produit {
+        position: relative;
+        z-index: 0;
+        height: 150px;
+        width: 150px;
+        border-radius: 25px;
+    }
+
+    button {
+        width: 150px;
+        height: 45px;
+    }
+
+    /* Bas de page */
+    footer{
+       width: 100%;
+    }
+
+    footer div {
+        display: block;
         flex-direction: column;
-        text-align: center;
+        justify-content: center;
+        width: 90%;
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 14px;
     }
 }
-
-/* Ajustements pour les écrans plus petits (par exemple, téléphones) */
-@media (max-width: 768px) {
-    footer {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
