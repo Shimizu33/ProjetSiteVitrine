@@ -399,19 +399,19 @@ footer a {
         padding: 10px 20px;
     }
 
-    .li-liens{
+    .li-liens {
         display:none;
 
     }
 
-    .li-logo{
+    .li-logo {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    .icon{
+    .icon {
         display: flex;
     }
 
@@ -432,7 +432,7 @@ footer a {
         width: 120px;
     }
 
-    .recherche{
+    .recherche {
         padding: 10px 10px;
     }
 
