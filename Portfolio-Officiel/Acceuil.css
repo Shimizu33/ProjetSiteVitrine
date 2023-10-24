@@ -47,7 +47,7 @@ header {
     text-align: center;
     padding-top: 100px; 
     padding-bottom: 50px;
-    background-image: url('photo.jpg');
+    background-image: url('image/photo.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -166,7 +166,20 @@ footer {
 }
 
 @media only screen and (max-width:600px){
-    nav a {
-      
+    #imgprofil {
+      max-width: 100%;
+      height: 300px;
+      display: block;
+      margin: 0 auto 20px; 
+      border: 5px solid #fff; 
+      border-radius: 50%; 
+  }
+  #articles {
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content:center;
   }
 }
+
+
