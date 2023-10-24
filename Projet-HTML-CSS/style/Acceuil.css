@@ -8,7 +8,6 @@ body {
 }
 
 /* HAUT DE PAGE */
-
 header {
     text-align: center;
     background-color: rgb(86, 163, 166);
@@ -73,15 +72,15 @@ nav li ul {
     text-align: center;
 }
 
-.icon{
+.icon {
     display: none;
 }
 
-#check{
+#check {
     display: none;
 }
 
-#menu-icon{
+#menu-icon {
     width: 35px;
     height: 30px;
     padding: 10px 20px;
@@ -92,7 +91,6 @@ nav li ul {
 }
 
 /* panier */
-
 #panier-img {
     height: 30px;
     margin-top: 4px;
@@ -110,9 +108,9 @@ nav li ul {
     font-weight: 600;
     border: none;
     outline: none;
+    background-color: rgb(25, 100, 126);
     color: rgb(255, 255, 255);
     padding: 10px 20px;
-    background-color: rgb(25, 100, 126);
     margin: 0;
 }
 
@@ -493,6 +491,15 @@ footer a {
     button {
         width: 150px;
         height: 45px;
+    }
+    
+    /* Lignes Articles */
+    .ligne-une {
+        padding: 20px 20px 0px 20px;
+    }
+
+    .ligne-deux {
+        padding: 0px 20px 20px 20px;
     }
 
     /* Catégories */

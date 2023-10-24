@@ -316,6 +316,7 @@ footer {
     background-color:rgb(25, 100, 126);
     text-align: center;
     padding: 0px;
+    padding-bottom: 5px;
     width: 100%;
 }
 
@@ -441,5 +442,9 @@ h4{
 
     footer p {
         font-size: 14px;
+    }
+
+    #chien-tete{
+        display:none
     }
 }

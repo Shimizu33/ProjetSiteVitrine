@@ -420,9 +420,7 @@ footer a {
     }
 
     header img {
-        height: 230px;
-        display: flex;
-        background-size: cover;
+        height: 200px;
     }
 
     img#nom {
