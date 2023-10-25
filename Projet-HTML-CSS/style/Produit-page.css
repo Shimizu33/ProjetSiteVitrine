@@ -126,7 +126,7 @@ form{
 }
   .recherche input[type="text"] {
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(204, 204, 204);
     border-radius: 5px;
     outline: none;
   }
@@ -290,8 +290,7 @@ p {
     padding-bottom: 20px;
 }
 
-/* Bouton ajouter */
-
+/* Bouton ajouter au panier */
 #panier {
     position: relative;
 }
@@ -313,7 +312,7 @@ p {
 #panier #ajouter:hover {
     background-color: rgb(25, 100, 126);
     box-shadow: 0 0 0 5px rgb(183, 208, 217);
-    color: #fff;
+    color: rgb(255, 255, 255);
     cursor: pointer;
 }
 
@@ -422,7 +421,6 @@ ul.couleurs {
 }
 
 /* RECOMMANDATION */
-
 .ligne-pr {
     display: flex;
     flex-direction: row;
@@ -457,7 +455,6 @@ ul.couleurs {
     border-radius: 25px;
 }
 
-
 .haut-pr {
     position: absolute;
     z-index: 1;
@@ -490,6 +487,7 @@ ul.couleurs {
 }
 
 /* Dessous image */
+/* pr = produits-recommandés */
 .prix-pr {
     text-align: center;
     margin-top: 25px;
@@ -543,9 +541,7 @@ ul.couleurs {
     cursor: pointer;
 }
 
-
 /* BAS DE PAGE */
-
 footer {
     background-color:rgb(25, 100, 126);
     color: rgb(255, 255, 255);
@@ -567,7 +563,6 @@ footer div {
     padding: 8px;
     text-align: center;
 }
-
 
 footer a {
     text-decoration: none;
@@ -610,12 +605,12 @@ footer a {
 
     .menu-deroulant .deroulant-btn {
         padding: 10px 10px;
-        
     }
 
     #liens-navbar a {
         padding: 20px 10px;
     }
+
     /* Barre de recherche */
     .recherche input[type="text"] {
         width: 120px;
@@ -673,7 +668,6 @@ footer a {
     
     #panier #ajouter {
         width: 300px;
-        
     }
 
     .details-produit {

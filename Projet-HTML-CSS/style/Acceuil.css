@@ -156,9 +156,8 @@ form {
 
 .recherche input[type="text"] {
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(204, 204, 204);
     border-radius: 5px;
-    outline: none;
 }
 
 .recherche input[type="text"]::placeholder {
@@ -427,6 +426,7 @@ footer a {
     #liens-navbar a {
         padding: 20px 10px;
     }
+
     /* Barre de recherche */
     .recherche input[type="text"] {
         width: 120px;

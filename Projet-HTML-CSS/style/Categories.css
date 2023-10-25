@@ -145,7 +145,7 @@ form {
 }
   .recherche input[type="text"] {
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(204, 204, 204);
     border-radius: 5px;
     outline: none;
   }
@@ -208,7 +208,7 @@ main {
 
 article {
     background-color: rgb(255, 255, 255);
-    border: 1px solid #ddd;
+    border: 1px solid rgb(221, 221, 221);
     padding: 20px;
     margin: 10px;
     text-align: center;
@@ -227,7 +227,7 @@ article:hover {
     position: absolute;
     z-index: 1;
     margin-top: 6px;
-    color: #f3f7fe;
+    color: rgb(243, 247, 254);
 }
 
 .stock, .reduction,.edition {
@@ -259,8 +259,7 @@ article:hover {
     border-radius: 25px;
 }
 
-h2,
-h3 {
+h2, h3 {
     text-align: center;
     color: rgb(25, 100, 126);
     margin: 0;
@@ -268,7 +267,7 @@ h3 {
 }
 
 h4 {
-    color: #f3f7fe;
+    color: rgb(243, 247, 254);
     text-align: center;
 }
 
@@ -348,7 +347,6 @@ footer div {
     text-align: center;
 }
 
-
 footer a {
     text-decoration: none;
     color: rgb(255, 170, 0);
@@ -359,7 +357,6 @@ footer a {
 @media (max-width: 768px) {
     
     /* Haut de page */
-
     #liens-navbar ul {
         flex-direction: column;
         padding: 10px;
@@ -371,7 +368,6 @@ footer a {
 
     .li-liens {
         display:none;
-
     }
 
     .li-logo {
@@ -390,13 +386,13 @@ footer a {
     }
 
     .menu-deroulant .deroulant-btn {
-        padding: 10px 10px;
-        
+        padding: 10px 10px;  
     }
 
     #liens-navbar a {
         padding: 20px 10px;
     }
+    
     /* Barre de recherche */
     .recherche input[type="text"] {
         width: 120px;

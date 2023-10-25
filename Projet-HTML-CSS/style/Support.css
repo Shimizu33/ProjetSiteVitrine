@@ -152,7 +152,6 @@ nav li ul {
 }
 
 /* Barre de recherche */
-
 #form-recherche {
     display: flex;
     justify-content: center;
@@ -160,9 +159,8 @@ nav li ul {
 
 .recherche input[type="text"] {
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(204, 204, 204);
     border-radius: 5px;
-    outline: none;
 }
   
 .recherche input[type="text"]::placeholder {
@@ -178,22 +176,11 @@ nav li ul {
     cursor: pointer;
 }
 
-
-#barre-recherche {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    margin-right: 5px;
-}
-
-
 .recherche button {
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
-
 
 /* panier */
 #panier {
@@ -206,7 +193,6 @@ nav li ul {
     margin-top: 4px;
     cursor: pointer;
 }
-
 
 /* Message promotionnel */
 .promotion-message {
@@ -228,13 +214,11 @@ nav li ul {
 
 
 /* FORMULAIRE CONTACT */
-
 #contact {
     text-align: center;
     padding: 20px;
     background-color: rgb(245, 245, 245);
 }
-
 
 #contact form {
     max-width: 400px;
@@ -248,8 +232,7 @@ nav li ul {
     text-align: left;
 }
 
-#contact form input,
-#contact form textarea#message {
+#contact form input, #contact form textarea#message {
     width: 90%;
     padding: 10px;
     margin-bottom: 15px;
@@ -257,7 +240,7 @@ nav li ul {
     border-radius: 4px;
 }
 
-/* bouton */
+/* Bouton envoyer*/
 #contact button#button-contact {
     background-color: rgb(86, 163, 166);
     color: rgb(255, 255, 255);
@@ -363,7 +346,6 @@ h4{
 
     .li-liens{
         display:none;
-
     }
 
     .li-logo{
@@ -383,7 +365,6 @@ h4{
 
     .menu-deroulant .deroulant-btn {
         padding: 10px 10px;
-        
     }
 
     #liens-navbar a {
