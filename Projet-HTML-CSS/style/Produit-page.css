@@ -50,17 +50,19 @@ nav {
 }
 
 .menu-deroulant .deroulant-btn {
-    font-size:18px;
-    border:none;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
     outline: none;
-    color: rgb(255, 255, 255);
-    padding: 10px;
     background-color: rgb(25, 100, 126);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
     margin: 0;
-}    
+}
 
 .menu-deroulant:hover .deroulant-btn {
     background-color: rgb(25, 100, 126);
+    border: 1px solid rgb(255, 255, 255);
 }
 
 .menu-contenu {
@@ -84,7 +86,7 @@ nav {
     background-color: rgb(115, 130, 144);
 }
 
-.menu-deroulant:hover .menu-contenu{
+.menu-deroulant:hover .menu-contenu {
     display: block;
 }
 
