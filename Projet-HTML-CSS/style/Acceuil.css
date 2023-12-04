@@ -400,7 +400,6 @@ footer a {
 
     .li-liens {
         display:none;
-
     }
 
     .li-logo {
@@ -421,10 +420,6 @@ footer a {
     .menu-deroulant .deroulant-btn {
         padding: 10px 10px;
         
-    }
-
-    #liens-navbar a {
-        padding: 20px 10px;
     }
 
     /* Barre de recherche */
